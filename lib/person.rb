@@ -44,7 +44,7 @@ class Person
     case topic
       when "politics"
         self.happiness -= 1
-        self.friend.happiness -= 1
+        friend.happiness -= 1
         "blah blah partisan blah lobbyist"
       when "weather"
         self.happiness += 1
