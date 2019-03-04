@@ -14,12 +14,10 @@ class Person
     @happiness > 7
   end
   def happiness=(amount)
-    new = [0, amount, 10].sort[1] #clamp
-    @happiness = new
+    @happiness = [0, amount, 10].sort[1] #clamp
   end
   def hygiene=(amount)
-    new = [0, amount, 10].sort[1] #clamp
-    @hygiene = new
+    @hygiene = [0, amount, 10].sort[1] #clamp
   end
   def get_paid amount
     @bank_account += amount
