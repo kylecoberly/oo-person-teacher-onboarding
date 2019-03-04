@@ -19,7 +19,6 @@ class Person
   end
   def hygiene=(amount)
     new = [0, amount, 10].sort[1] #clamp
-    puts new
     @hygiene = new
   end
   def get_paid amount
