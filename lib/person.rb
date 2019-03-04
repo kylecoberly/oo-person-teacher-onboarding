@@ -43,8 +43,8 @@ class Person
   def start_conversation friend, topic
     case topic
       when "politics"
-        self.happiness -= 1
-        friend.happiness -= 1
+        self.happiness -= 2
+        friend.happiness -= 2
         "blah blah partisan blah lobbyist"
       when "weather"
         self.happiness += 1
