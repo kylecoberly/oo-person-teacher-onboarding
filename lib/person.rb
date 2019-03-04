@@ -27,28 +27,28 @@ class Person
     "all about the benjamins"
   end
   def take_bath
-    hygiene = hygiene + 4
+    self.hygiene += 4
     "♪ Rub-a-dub just relaxing in the tub ♫"
   end
   def work_out
-    happiness = happiness + 2
-    hygiene = hygiene - 3
+    self.happiness += 2
+    self.hygiene -= 3
     "♪ another one bites the dust ♫"
   end
   def call_friend friend
-    happiness = happiness + 3
-    friend.happiness = friend.happiness + 3
+    self.happiness += 3
+    friend.happiness += 3
     "Hi #{friend.name}! It's #{@name}. How are you?"
   end
   def start_conversation friend, topic
     case topic
       when "politics"
-        happiness = happiness - 1
-        friend.happiness = friend.happiness - 1
+        self.happiness -= 1
+        self.friend.happiness -= 1
         "blah blah partisan blah lobbyist"
       when "weather"
-        happiness = happiness + 1
-        friend.happiness = friend.happiness + 1
+        self.happiness += 1
+        friend.happiness += 1
         "blah blah sun blah rain"
       else
         "blah blah blah blah blah"
